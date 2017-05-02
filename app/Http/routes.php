@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Route::auth();
-
-Route::get('/home', 'HomeController@index');
+Route::get('/','StaticPagesController@home');
+Route::get('/help','StaticPagesController@help');
+Route::get('/about','StaticPagesController@about');
